@@ -85,5 +85,69 @@ namespace ExerciciosTI20N
             }
         }//fim do método
 
+        //Exercício 6: Faça um programa que peça ao usuário um número e imprima se é positivo, negativo ou zero.
+        public string ExercicioSeis(int num)
+        {
+            if(num < 0)
+            {
+                return num + " é Negativo!";
+            }else if(num > 0)
+            {
+                return num + " é Positivo!";
+            }
+            else
+            {
+                return num + " é Zero!";
+            }
+        }//fim do método
+
+        //Exercício 7: Faça um programa que peça ao usuário um
+        //número e imprima a tabuada desse número.
+        public string ExercicioSete(int num)
+        {
+            string resultado = "";
+
+            for(int i=0; i <= 10; i++)
+            {
+                resultado += num + " * " + i + " = " + (num * i) + "\n";
+            }//fim do for
+
+            return resultado;
+        }//fim do método
+
+        //Exercício 8: Faça um programa que peça ao usuário um número e
+        //imprima os números de 1 até esse número.
+        public string ExercicioOito(int num)
+        {
+            string resultado = "";
+
+            for(int i=0; i <= num; i++)
+            {
+                resultado += "\n" + i;
+            }
+
+            return resultado;
+        }//fim do método
+
+        //Exercício 9: Faça um programa que peça ao usuário um número e
+        //imprima a soma dos números de 1 até esse número.
+        public int ExercicioNove(int num)
+        {
+            int soma = 0;
+
+            for (int i = 0; i <= num; i++)
+            {
+                soma += i;
+            }
+
+            return soma;
+        }//fim do método
+
+        //Exercício 10: Faça um programa que imprima os números primos de 1 a 20.
+
+
+        //Exercício 11: Faça um programa que peça ao usuário um
+        //número e verifique se é primo.
+
     }//fim da classe
 }//fim do projeto

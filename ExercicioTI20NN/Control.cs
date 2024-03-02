@@ -23,7 +23,11 @@ namespace ExerciciosTI20N
                               "2. Exercício 02\n" +
                               "3. Exercício 03\n" +
                               "4. Exercício 04\n" +
-                              "5. Exercício 05\n");
+                              "5. Exercício 05\n" +
+                              "6. Exercício 06\n" +
+                              "7. Exercício 07\n" +
+                              "8. Exercício 08\n" +
+                              "9. Exercício 09\n");
         }//fim do menu
 
         public void Operacao()
@@ -56,6 +60,30 @@ namespace ExerciciosTI20N
                         int num = Convert.ToInt32(Console.ReadLine());
 
                         Console.WriteLine(modelo.ExercicioCinco(num));
+                        break;
+                    case 6:
+                        Console.WriteLine("Infome um número: ");
+                        num = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercicioSeis(num));
+                        break;
+                    case 7:
+                        Console.WriteLine("Informe um número: ");
+                        num = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercicioSete(num));
+                        break;
+                    case 8:
+                        Console.WriteLine("Informe um número: ");
+                        num = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercicioOito(num));
+                        break;
+                    case 9:
+                        Console.WriteLine("Informe um número: ");
+                        num = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercicioNove(num));
                         break;
                     default:
                         Console.WriteLine("Código digitado não é válido!");
