@@ -188,6 +188,77 @@ namespace ExerciciosTI20N
 
         //Exercício 13: Faça um programa que imprima a sequência de Fibonacci
         //até o décimo termo.
+        public string ExercicioTreze()
+        {
+            string resultado = "0 1";
+            int fib1 = 0;
+            int fib2 = 1;
+            int fib3 = 0;
+            for(int i = 1; i <= 8; i++)
+            {
+                fib3 = fib1 + fib2;
+                resultado += " " + fib3; 
+                fib1 = fib2;
+                fib2 = fib3;
+            }//fim do for
+
+            return resultado;
+        }//fim do método
+
+        //Exercício 14: Faça um programa que peça ao usuário 
+        //um número e imprima se é um número de Fibonacci.
+        public string ExercicioCatorze(int num)
+        {
+            string resultado = "0 1";
+            int fib1 = 0;
+            int fib2 = 1;
+            int fib3 = 0;
+            for (int i = 1; i <= num-2; i++)
+            {
+                fib3 = fib1 + fib2;
+                resultado += " " + fib3;
+                fib1 = fib2;
+                fib2 = fib3;
+            }//fim do for
+
+            return resultado;
+        }//fim do método
+
+        //Exercício 15: Faça um programa que peça ao usuário um
+        //número e calcule a soma dos seus dígitos.
+        public int ExercicioQuinze(int num)
+        {
+            string resultado = "" + num; //Convertendo o número para texto
+            int tamanho = resultado.Length;//Retorna o tamanho do texto
+            int soma = 0;
+            for(int i=0; i < tamanho; i++)
+            {
+                soma += Convert.ToInt32(resultado.Substring(i, 1));//coletando 1 caracter por vez
+            }
+            return soma;
+        }//fim do método
+        
+        //Exercício 16: Faça um programa que peça ao usuário um número
+        //e imprima os números pares e ímpares de 1 até esse número.
+        public string ExercicioDezesseis(int num)
+        {
+            string par = "";
+            string impar = "";
+            for(int i=1; i <= num; i++)
+            {
+                if(i % 2 == 0)
+                {
+                    par += " " + i;
+                }
+                else
+                {
+                    impar += " " + i;
+                }
+            }
+            return "Pares: " + par + "\nÍmpares: " + impar;
+        }//fim do método
+
+
 
     }//fim da classe
 }//fim do projeto
